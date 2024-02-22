@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <link rel='icon' type='image/png' href='images/spotterIcon.png'>
+  <title>Spotter</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <script src="javascript/jscript.js" type="text/javascript"></script>
+  
+</head>
+<body>
+		<div id = "modal_wrapper_container">
+			<div class = "modal_wrapper">
+				<div class = "modal_message">
+					<div class = "modal_message_img"><img src = "images/messageIcon.png"/></div>
+					<div class = "modal_message_content" id = "setMessage">Message</div>
+					<div class = "modal_message_content"><button id = "btn_label_id" onclick = "modalSetting('close','','')">Continue</button></div>
+				</div>
+			</div>
+		</div>
+		<div class = "spotter_wrapper">
+			<div class = "spotter_inner_wrapper">
+				<div class = "spotter_inner_wrapper_header">
+					<img src = "images/spotterLogo.png" />
+					
+					
+				</div>
+				
+				<div class = "spotter_inner_wrapper_section display_center_flex">
+					<!-- <div class = "spotter_inner_wrapper_header_info" id = "game_status_id"><img src = "images/idle_img.png"/></div>
+					<div class = "spotter_inner_wrapper_header_info" id = "game_player_id"><img src = "images/red_spotter.png"/></div>
+					 -->
+					<div class = "spotter_inner_wrapper_header_info" id = "num_lives_id">+0</div>
+					<div class = "spotter_inner_wrapper_header_info" id = "num_points_id">0</div>
+				</div>
+				
+				<div class = "spotter_inner_wrapper_section" id = "spotter_inner_wrapper_section_message">
+					Can you spot the spotter?
+				</div>
+				
+				<div class = "spotter_inner_wrapper_section display_center_flex">
+					<div class = "spotter_inner_wrapper_section_button" onclick = "generateTiles(1)"><img id = "tile_1" src = "images/question_mark_icon.png" /></div>
+					<div class = "spotter_inner_wrapper_section_button" onclick = "generateTiles(2)"><img id = "tile_2" src = "images/question_mark_icon.png" /></div>
+					<div class = "spotter_inner_wrapper_section_button" onclick = "generateTiles(3)"><img id = "tile_3" src = "images/question_mark_icon.png" /></div>
+					<div class = "spotter_inner_wrapper_section_button" onclick = "generateTiles(4)"><img id = "tile_4" src = "images/question_mark_icon.png" /></div>
+				</div>
+				
+			</div>
+			<div class = "spotter_inner_wrapper_section font_size_2" id = "high_Score_id">High Score: 0</div>
+		</div>
+			
+	
+</body>
+
+<script>
+	startup();
+</script>
+
+</html>
